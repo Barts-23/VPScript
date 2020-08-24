@@ -455,8 +455,8 @@ done
 done
 
  # setting openvpn server port
- sed -i "s|MyOvpnPort1|$OpenVPN_Port1|g" /etc/openvpn/server.conf
- sed -i "s|MyOvpnPort2|$OpenVPN_Port2|g" /etc/openvpn/server.conf
+ sed -i "s|MyOvpnPort1|$OpenVPN_Port1|g" /etc/openvpn/server_tcp.conf
+ sed -i "s|MyOvpnPort2|$OpenVPN_Port2|g" /etc/openvpn/server_udp.conf
  
  # Generating openvpn dh.pem file using openssl
  openssl dhparam -out /etc/openvpn/dh.pem 1024
