@@ -1,5 +1,5 @@
 # iambarts
-<h1 align="center">ScripBartS<img src="https://img.shields.io/badge/Version-3.0-blue.svg"></h1>
+<h1 align="center">ScriptBartS<img src="https://img.shields.io/badge/Version-3.0-blue.svg"></h1>
 
 <p align="center">ScriptBartS is remodify from Bon-Chan VPS Script</b></p>
 <h3 align="center">Services</h3>
