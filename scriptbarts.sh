@@ -920,13 +920,11 @@ fi
  echo -e " http://$IPADDR:$OvpnDownload_Port/Configs.zip"
  echo -e ""
  echo -e " ScriptBartS"
- echo -e " Official Update link: https://phcorner.net/"
  echo -e ""
  echo -e " [Note] DO NOT RESELL THIS SCRIPT"
- echo -e " This script is under project of\n https://github.com/Barts_23"
 
  # Clearing all logs from installation
  rm -rf /root/.bash_history && history -c && echo '' > /var/log/syslog
 
-rm -f DebianVPS-Installer*
+rm -f scriptbarts.sh*
 exit 1
