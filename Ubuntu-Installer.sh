@@ -54,8 +54,6 @@ MyVPS_Time='Asia/Manila'
 #############################
 #############################
 
-function InstUpdates(){
- export DEBIAN_FRONTEND=noninteractive
  apt-get update
  apt-get upgrade -y
  
