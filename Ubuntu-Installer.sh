@@ -1,5 +1,5 @@
 #!/bin/bash
-# Debian 9 and 10 VPS Installer
+# Ubuntu VPS Installer
 # Script by Bonveio Abitona
 # 
 # Illegal selling and redistribution of this script is strictly prohibited
