@@ -603,6 +603,8 @@ myNginxC
 
  # Now creating all of our OpenVPN Configs 
 cat <<EOF152> /var/www/openvpn/GTMConfig.ovpn
+# Credits to iamBARTX
+
 client
 dev tun
 proto tcp
@@ -624,7 +626,7 @@ comp-lzo
 setenv CLIENT_CERT 0
 reneg-sec 0
 verb 1
-http-proxy $(curl -s http://ipinfo.io/ip || wget -q http://ipinfo.io/ip) $Squid_Port1
+http-proxy $(curl -s http://ipinfo.io/ip || wget -q http://ipinfo.io/ip) $Proxy_Port
 http-proxy-option CUSTOM-HEADER Host redirect.googlevideo.com
 http-proxy-option CUSTOM-HEADER X-Forwarded-For redirect.googlevideo.com
 
@@ -634,6 +636,8 @@ $(cat /etc/openvpn/ca.crt)
 EOF152
 
 cat <<EOF16> /var/www/openvpn/SunConfig.ovpn
+# Credits to iamBARTX
+
 client
 dev tun
 proto udp
@@ -662,10 +666,12 @@ $(cat /etc/openvpn/ca.crt)
 EOF16
 
 cat <<EOF160> /var/www/openvpn/SunTCPPConfig.ovpn
+# Credits to iamBARTX
+
 client
 dev tun
 proto tcp
-remote $IPADDR $OpenVPN_Port2
+remote $IPADDR $OpenVPN_Port1
 remote-cert-tls server
 resolv-retry infinite
 nobind
@@ -683,6 +689,9 @@ comp-lzo
 setenv CLIENT_CERT 0
 reneg-sec 0
 verb 1
+http-proxy $(curl -s http://ipinfo.io/ip || wget -q http://ipinfo.io/ip) $Proxy_Port
+http-proxy-option CUSTOM-HEADER Host viber.com
+http-proxy-option CUSTOM-HEADER X-Forwarded-For viber.com
 
 <ca>
 $(cat /etc/openvpn/ca.crt)
