@@ -83,7 +83,6 @@ MyVPS_Time='Asia/Manila'
  wget -qO security-openvpn-net.asc "https://keys.openpgp.org/vks/v1/by-fingerprint/F554A3687412CFFEBDEFE0A312F5F7B42F2B01E7" && gpg --import security-openvpn-net.asc
  yum update
  yum install openvpn -y
-}
 
 function InstWebmin(){
  # Download the webmin .deb package
