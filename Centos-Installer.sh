@@ -832,7 +832,7 @@ chmod +x /etc/profile.d/barts.sh
 }
 
 function ScriptMessage(){
- echo -e " (｡◕‿◕｡) $MyScriptName Debian VPS Installer"
+ echo -e " (｡◕‿◕｡) $MyScriptName Centos VPS Installer"
  echo -e " Open release version"
  echo -e ""
  echo -e " Script created by Bonveio"
