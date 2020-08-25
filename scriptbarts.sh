@@ -551,7 +551,7 @@ myPrivoxy
  sed -i "s|Privoxy_Port2|$Privoxy_Port2|g" /etc/privoxy/config
 
  # I'm setting Some Squid workarounds to prevent Privoxy's overflowing file descriptors that causing 50X error when clients trying to connect to your proxy server(thanks for this trick @homer_simpsons)
- apt remove --purge squid
+ apt remove --purge squid -y
  rm -rf /etc/squid/sq*
  apt install squid -y
  
