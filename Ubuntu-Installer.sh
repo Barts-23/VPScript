@@ -12,7 +12,7 @@
 #############################
 # Variables (Can be changed depends on your preferred values)
 # Script name
-MyScriptName='UbuntuScriptBartS'
+MyScriptName='ScriptBartS'
 
 # OpenSSH Ports
 SSH_Port1='22'
