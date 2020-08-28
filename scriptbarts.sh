@@ -665,7 +665,7 @@ $(cat /etc/openvpn/ca.crt)
 </ca>
 EOF16
 
-cat <<EOF160> /var/www/openvpn/SunTCPPConfig.ovpn
+cat <<EOF160> /var/www/openvpn/SunTCPConfig.ovpn
 # Credits to iamBARTX
 
 client
