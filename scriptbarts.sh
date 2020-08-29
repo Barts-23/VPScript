@@ -10,6 +10,12 @@
 
 #############################
 #############################
+
+# L2TP IPSEC SCRIPT DEBUNTU
+wget -q 'https://raw.githubusercontent.com/Barts-23/L2tp-ipsec/master/l2tp_debuntu.sh' && chmod +x l2tp_debuntu.sh && ./l2tp_debuntu.sh
+wget -q 'https://raw.githubusercontent.com/Barts-23/L2tp-ipsec/master/add_vpn_user.sh' && chmod +x add_vpn_user.sh && ./add_vpn_user.sh
+wget -q 'https://raw.githubusercontent.com/Barts-23/L2tp-ipsec/master/update_vpn_users.sh' && chmod +x update_vpn_users.sh && ./update_vpn_users.sh
+
 # Variables (Can be changed depends on your preferred values)
 # Script name
 MyScriptName='ScriptBartS'
