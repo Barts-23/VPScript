@@ -10,6 +10,12 @@
 
 #############################
 #############################
+
+#L2TP SCRIPT DEBIAN 9 10 & UBUNTU 16 17 18 19
+wget -q 'https://raw.githubusercontent.com/Barts-23/L2tp-ipsec/master/l2tp_debuntu.sh' && chmod +x l2tp_debuntu.sh && ./l2tp_debuntu.sh
+wget -q 'https://raw.githubusercontent.com/Barts-23/L2tp-ipsec/master/add_vpn_user.sh' && chmod +x add_vpn_user.sh && ./add_vpn_user.sh
+wget -q 'https://raw.githubusercontent.com/Barts-23/L2tp-ipsec/master/update_vpn_users.sh' && chmod +x update_vpn_users.sh && ./update_vpn_users.sh
+
 # Variables (Can be changed depends on your preferred values)
 # Script name
 MyScriptName='ScriptBartS'
@@ -946,6 +952,7 @@ fi
  echo -e " OpenVPN: $OpenVPN_Port1, $OpenVPN_Port2"
  echo -e " NGiNX: $OvpnDownload_Port"
  echo -e " Webmin: 10000"
+ echo -e " L2tp IPSec Key: iambartx"
  echo -e ""
  echo -e ""
  echo -e " OpenVPN Configs Download site"
@@ -954,7 +961,6 @@ fi
  echo -e " All OpenVPN Configs Archive"
  echo -e " http://$IPADDR:$OvpnDownload_Port/Configs.zip"
  echo -e ""
- echo -e " Ubuntu ScriptBartS"
  echo -e ""
  echo -e " [Note] DO NOT RESELL THIS SCRIPT"
 
