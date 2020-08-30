@@ -895,7 +895,6 @@ fi
  # Begin Installation by Updating and Upgrading machine and then Installing all our wanted packages/services to be install.
  ScriptMessage
  sleep 2
- InstUpdates
  
  # Configure OpenSSH and Dropbear
  echo -e "Configuring ssh..."
